@@ -1,7 +1,71 @@
 package org.example;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        System.out.println("Calculator Program");
+        Scanner scanner = new Scanner(System.in);
+        int flag=0;
+        while(flag == 0){
+            System.out.println("Operation Choices:");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. Exit");
+
+            System.out.println("Enter a choice: ");
+            int choice = scanner.nextInt();
+            switch (choice){
+                case 1:
+                    System.out.print("Enter the first number: ");
+                    int num1 = Integer.parseInt(scanner.nextLine());
+
+                    System.out.print("Enter the second number: ");
+                    int num2 = Integer.parseInt(scanner.nextLine());
+
+                    System.out.println("Result: "+ num2+num1);
+                    break;
+
+                case 2:
+                    System.out.print("Enter the first number: ");
+                    int a = Integer.parseInt(scanner.nextLine());
+
+                    System.out.print("Enter the second number: ");
+                    int b = Integer.parseInt(scanner.nextLine());
+
+                    int res = a-b;
+                    System.out.println("Result: "+ res);
+                    break;
+
+                case 3:
+                    System.out.print("Enter the first number: ");
+                    int c = Integer.parseInt(scanner.nextLine());
+
+                    System.out.print("Enter the second number: ");
+                    int d = Integer.parseInt(scanner.nextLine());
+
+                    System.out.println("Result: "+ c*d);
+                    break;
+
+                case 4:
+                    System.out.print("Enter the first number: ");
+                    int e = Integer.parseInt(scanner.nextLine());
+
+                    System.out.print("Enter the second number: ");
+                    int f = Integer.parseInt(scanner.nextLine());
+
+                    System.out.println("Result: "+ e/f);
+                    break;
+
+                case 5:
+                    flag = 1;
+                    break;
+
+                default:
+                    System.out.println("Invalid Input");
+                    flag=1;
+                    break;
+            }
+        }
     }
 }
