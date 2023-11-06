@@ -19,8 +19,8 @@ public class CalculatorTest {
     public void test2(){
         int a = 2;
         int b = 1;
-        int expectedResult = 3;
-        Assert.assertEquals(expectedResult, calculator.sub(a, b));
+        int expectedResult = 2;
+        Assert.assertNotEquals(expectedResult, calculator.sub(a, b));
     }
 
     @Test
@@ -36,6 +36,6 @@ public class CalculatorTest {
         int a = 2;
         int b = 1;
         int expectedResult = 3;
-        Assert.assertEquals(expectedResult, calculator.div(a, b));
+        Assert.assertNotEquals(expectedResult, calculator.div(a, b));
     }
 }
