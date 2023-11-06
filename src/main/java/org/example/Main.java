@@ -23,7 +23,8 @@ public class Main {
                     System.out.print("Enter the second number: ");
                     int num2 = Integer.parseInt(scanner.nextLine());
 
-                    System.out.println("Result: "+ num2+num1);
+                    int res1 = add(num1, num2);
+                    System.out.println("Result: "+ res1);
                     break;
 
                 case 2:
@@ -33,8 +34,8 @@ public class Main {
                     System.out.print("Enter the second number: ");
                     int b = Integer.parseInt(scanner.nextLine());
 
-                    int res = a-b;
-                    System.out.println("Result: "+ res);
+                    int res2 = sub(a, b);
+                    System.out.println("Result: "+ res2);
                     break;
 
                 case 3:
@@ -44,7 +45,8 @@ public class Main {
                     System.out.print("Enter the second number: ");
                     int d = Integer.parseInt(scanner.nextLine());
 
-                    System.out.println("Result: "+ c*d);
+                    int res3 = mul(c, d);
+                    System.out.println("Result: "+ res3);
                     break;
 
                 case 4:
@@ -54,7 +56,8 @@ public class Main {
                     System.out.print("Enter the second number: ");
                     int f = Integer.parseInt(scanner.nextLine());
 
-                    System.out.println("Result: "+ e/f);
+                    int res4 = div(e, f);
+                    System.out.println("Result: "+ res4);
                     break;
 
                 case 5:
@@ -68,4 +71,21 @@ public class Main {
             }
         }
     }
+
+    public static int add(int a, int b){
+        return a+b;
+    }
+
+    public static int sub(int a, int b){
+        return a-b;
+    }
+
+    public static int mul(int a, int b){
+        return a*b;
+    }
+
+    public static int div(int a, int b){
+        return a/b;
+    }
+
 }
