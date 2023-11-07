@@ -16,6 +16,14 @@ public class CalculatorTest {
     }
 
     @Test
+    public void test5(){
+        int a = 2;
+        int b = 1;
+        int expectedResult = 4;
+        Assert.assertNotEquals(expectedResult, calculator.add(a, b));
+    }
+
+    @Test
     public void test2(){
         int a = 2;
         int b = 1;
