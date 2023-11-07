@@ -29,34 +29,34 @@ public class Main {
 
                 case 2:
                     System.out.print("Enter the first number: ");
-                    int a = Integer.parseInt(scanner.nextLine());
+                    int a1 = Integer.parseInt(scanner.nextLine());
 
                     System.out.print("Enter the second number: ");
-                    int b = Integer.parseInt(scanner.nextLine());
+                    int b1 = Integer.parseInt(scanner.nextLine());
 
-                    int res2 = sub(a, b);
+                    int res2 = sub(a1, b1);
                     System.out.println("Result: "+ res2);
                     break;
 
                 case 3:
                     System.out.print("Enter the first number: ");
-                    int c = Integer.parseInt(scanner.nextLine());
+                    int a2 = Integer.parseInt(scanner.nextLine());
 
                     System.out.print("Enter the second number: ");
-                    int d = Integer.parseInt(scanner.nextLine());
+                    int b2 = Integer.parseInt(scanner.nextLine());
 
-                    int res3 = mul(c, d);
+                    int res3 = mul(a2, b2);
                     System.out.println("Result: "+ res3);
                     break;
 
                 case 4:
                     System.out.print("Enter the first number: ");
-                    int e = Integer.parseInt(scanner.nextLine());
+                    int a3 = Integer.parseInt(scanner.nextLine());
 
                     System.out.print("Enter the second number: ");
-                    int f = Integer.parseInt(scanner.nextLine());
+                    int b3 = Integer.parseInt(scanner.nextLine());
 
-                    int res4 = div(e, f);
+                    int res4 = div(a3, b3);
                     System.out.println("Result: "+ res4);
                     break;
 
