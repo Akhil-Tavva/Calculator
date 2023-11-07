@@ -18,10 +18,10 @@ public class Main {
             switch (choice){
                 case 1:
                     System.out.print("Enter the first number: ");
-                    int num1 = Integer.parseInt(scanner.nextLine());
+                    int num1 = scanner.nextInt();
 
                     System.out.print("Enter the second number: ");
-                    int num2 = Integer.parseInt(scanner.nextLine());
+                    int num2 = scanner.nextInt();
 
                     int res1 = add(num1, num2);
                     System.out.println("Result: "+ res1);
@@ -29,10 +29,10 @@ public class Main {
 
                 case 2:
                     System.out.print("Enter the first number: ");
-                    int a1 = Integer.parseInt(scanner.nextLine());
+                    int a1 = scanner.nextInt();
 
                     System.out.print("Enter the second number: ");
-                    int b1 = Integer.parseInt(scanner.nextLine());
+                    int b1 = scanner.nextInt();
 
                     int res2 = sub(a1, b1);
                     System.out.println("Result: "+ res2);
@@ -40,10 +40,10 @@ public class Main {
 
                 case 3:
                     System.out.print("Enter the first number: ");
-                    int a2 = Integer.parseInt(scanner.nextLine());
+                    int a2 = scanner.nextInt();
 
                     System.out.print("Enter the second number: ");
-                    int b2 = Integer.parseInt(scanner.nextLine());
+                    int b2 = scanner.nextInt();
 
                     int res3 = mul(a2, b2);
                     System.out.println("Result: "+ res3);
@@ -51,10 +51,10 @@ public class Main {
 
                 case 4:
                     System.out.print("Enter the first number: ");
-                    int a3 = Integer.parseInt(scanner.nextLine());
+                    int a3 = scanner.nextInt();
 
                     System.out.print("Enter the second number: ");
-                    int b3 = Integer.parseInt(scanner.nextLine());
+                    int b3 = scanner.nextInt();
 
                     int res4 = div(a3, b3);
                     System.out.println("Result: "+ res4);
