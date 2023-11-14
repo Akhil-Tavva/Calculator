@@ -1,0 +1,10 @@
+2023-11-14 16:36:15.604 [main] INFO  org.example.Main - Executing addition operation for 2 and 1. Result: 3
+
+2023-11-14 16:36:15.606 [main] INFO  org.example.Main - Executing subtraction operation for 2 and 1. Result: 1
+
+2023-11-14 16:36:15.606 [main] INFO  org.example.Main - Executing multiplication operation for 2 and 1. Result: 2
+
+2023-11-14 16:36:15.606 [main] INFO  org.example.Main - Executing addition operation for 2 and 1. Result: 2
+
+2023-11-14 16:36:15.607 [main] INFO  org.example.Main - Executing addition operation for 2 and 7. Result: 9
+
