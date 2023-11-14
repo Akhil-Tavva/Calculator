@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args){
+        logger.info("Calculator Begins!!");
         Scanner scanner = new Scanner(System.in);
         int flag=0;
         while(flag == 0){
@@ -77,19 +78,27 @@ public class Main {
     }
 
     public static int add(int a, int b){
-        return a+b;
+        int c = a+b;
+        logger.info("Executing addition operation for "+a+" and "+b+". Result: "+c+"\n");
+        return c;
     }
 
     public static int sub(int a, int b){
-        return a-b;
+        int c = a-b;
+        logger.info("Executing subtraction operation for "+a+" and "+b+". Result: "+c+"\n");
+        return c;
     }
 
     public static int mul(int a, int b){
-        return a*b;
+        int c = a*b;
+        logger.info("Executing multiplication operation for "+a+" and "+b+". Result: "+c+"\n");
+        return c;
     }
 
     public static int div(int a, int b){
-        return a/b;
+        int c = a/b;
+        logger.info("Executing addition operation for "+a+" and "+b+". Result: "+c+"\n");
+        return c;
     }
 
 }
